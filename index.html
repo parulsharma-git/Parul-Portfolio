@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parul Sharma | Software Developer &amp; AI Enthusiast</title>
+  <meta name="description"
+    content="Parul Sharma — Aspiring Software Developer and AI Enthusiast. Portfolio featuring AI agent projects, full-stack applications, IBM SkillsBuild internships, and more.">
+  <meta name="keywords"
+    content="Parul Sharma, Software Developer, AI Developer, Python Developer, Django, FastAPI, Portfolio">
+  <meta name="author" content="Parul Sharma">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Parul Sharma | Software Developer & AI Enthusiast">
+  <meta property="og:description"
+    content="Aspiring Software Developer building AI-powered applications, full-stack systems, and automation workflows.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="parul-img.png">
+
+  <!-- Favicon placeholder -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <span class="preloader-bracket">&lt;</span>
+      <span class="preloader-name">PS</span>
+      <span class="preloader-bracket">/&gt;</span>
+    </div>
+    <div class="preloader-bar"><span></span></div>
+  </div>
+
+  <!-- Cursor glow (desktop only, controlled via JS/CSS) -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header>
+    <nav id="navbar" class="navbar">
+      <a href="#home" class="nav-logo">
+        <span class="nav-logo-bracket">&lt;</span>Parul<span class="nav-logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home"><span class="nav-index">00</span>Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about"><span class="nav-index">01</span>About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills"><span class="nav-index">02</span>Skills</a></li>
+        <li><a href="#internship" class="nav-link" data-section="internship"><span
+              class="nav-index">03</span>Internships</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects"><span class="nav-index">04</span>Projects</a>
+        </li>
+        <li><a href="#certificate" class="nav-link" data-section="certificate"><span
+              class="nav-index">05</span>Certificates</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact"><span class="nav-index">06</span>Contact</a></li>
+      </ul>
+
+      <a href="Parul_Sharma_Resume.pdf" download class="nav-cta">
+        <i class="fa-solid fa-arrow-down"></i> Resume
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="hero-inner">
+        <p class="hero-eyebrow reveal-fade">
+          <span class="pulse-dot"></span> Open to Full-Time Opportunities, Internships &amp; Entry-Level Roles
+        </p>
+
+        <h1 class="hero-title reveal-slide-up">
+          Hi, I'm <span class="hero-name">Parul Sharma</span>
+        </h1>
+
+        <p class="hero-subtitle reveal-slide-up delay-1">
+          <span class="typed-prefix">$</span>
+          <span id="typedText" class="typed-text"></span><span class="typed-cursor">|</span>
+        </p>
+
+        <p class="hero-desc reveal-slide-up delay-2">
+          I build AI-powered applications, full-stack systems, and automation workflows —
+          turning ideas into working software with Python, JavaScript, and a genuine curiosity for AI agents.
+        </p>
+
+        <div class="hero-actions reveal-slide-up delay-3">
+          <a href="Parul_Sharma_Resume.pdf" download class="btn btn-primary">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+          <!-- GitHub -->
+          <a href="https://github.com/parulsharma-git" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/parul-sharma-a2a580347/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-glass">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+
+          <!-- Contact -->
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+
+        </div>
+      </div>
+
+      <div class="hero-stats reveal-fade delay-3">
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Internships</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span>Scroll</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-head reveal-fade">
+        <span class="section-eyebrow">01 / About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual reveal-slide-left">
+          <div class="about-frame">
+            <img src="Parul_Img.jpg" alt="Parul Sharma" loading="lazy">
+          </div>
+          <div class="about-badge">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>B.Voc Software Development</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal-slide-right">
+          <p class="about-lead">
+            I'm a Software Development student with a strong pull toward
+            <strong>AI</strong>, <strong>UI design</strong>, and <strong>web development</strong> —
+            the kind of person who'd rather build the thing than just read about it.
+          </p>
+          <p>
+            I love creating modern websites, AI-powered agents, and automation workflows that
+            solve real problems. Currently pursuing my Bachelor of Vocations in Software
+            Development, I spend my time learning new technologies, shipping small projects,
+            and sharpening my development skills every day.
+          </p>
+          <p>
+            Over the past few months, I've completed two AI-focused internships with IBM
+            SkillsBuild, built full-stack systems with Django and FastAPI, and explored
+            workflow automation with n8n and Gemini AI.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div><span class="info-label">Location</span><span class="info-value">India</span></div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-briefcase"></i>
+              <div><span class="info-label">Status</span><span class="info-value">Open to Full-Time Opportunities</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-code"></i>
+              <div><span class="info-label">Focus</span><span class="info-value">AI &amp; Full-Stack Dev</span></div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-language"></i>
+              <div><span class="info-label">Languages</span><span class="info-value">English, Hindi, Punjabi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="section-head reveal-fade">
+        <span class="section-eyebrow">02 / Skills</span>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal-stagger">
+          <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Programming Languages</h3>
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">C</span>
+            <span class="chip">C++</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-stagger">
+          <div class="skill-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Frontend Development</h3>
+          <div class="chip-row">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-stagger">
+          <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>Frameworks</h3>
+          <div class="chip-row">
+            <span class="chip">Django</span>
+            <span class="chip">FastAPI</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-stagger">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Database</h3>
+          <div class="chip-row">
+            <span class="chip">SQL</span>
+            <span class="chip">SQLite</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-stagger">
+          <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>AI & Automation</h3>
+          <div class="chip-row">
+            <span class="chip">Prompt Engineering</span>
+            <span class="chip">Gemini AI</span>
+            <span class="chip">Groq LLM</span>
+            <span class="chip">n8n</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-stagger">
+          <div class="skill-icon"><i class="fa-solid fa-wrench"></i></div>
+          <h3>Tools & Platforms</h3>
+          <div class="chip-row">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">n8n</span>
+            <span class="chip">Render</span>
+            <span class="chip">Vercel</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Internship -->
+    <section id="internship" class="section">
+      <div class="section-head reveal-fade">
+        <span class="section-eyebrow">03 / Experience</span>
+        <h2 class="section-title">Internships</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-slide-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <i class="fa-regular fa-calendar"></i> 2026 – Present
+            </span>
+
+            <h3>IBM SkillsBuild – Gen AI &amp; Cloud Internship <span style="color:#ff69b4;">(Ongoing)</span></h3>
+
+            <p class="timeline-org">
+              CSRBOX Foundation &middot; AICTE &middot; IBM SkillsBuild
+            </p>
+
+            <p class="timeline-project">
+              <i class="fa-solid fa-diagram-project"></i>
+              Project: Campus2Corporate AI – AI Placement Preparation Platform
+            </p>
+
+            <p>
+              Developing an AI-powered placement preparation platform using
+              <strong>FastAPI, HTML, CSS, Bootstrap, JavaScript, SQLite, and Groq LLM</strong>.
+              Building ATS Resume Analyzer, AI Resume Rewriter, Job Description Matcher,
+              and AI Mock Interview modules with REST API integration.
+              Deploying the application using Render and Vercel with Docker support.
+            </p>
+
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Groq LLM</span>
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">Bootstrap</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">SQLite</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Render</span>
+              <span class="chip">Vercel</span>
+            </div>
+
+            <a href="#" target="_blank" rel="noopener" class="btn btn-ghost-sm">
+              <i class="fa-solid fa-certificate"></i> Certificate Coming Soon
+            </a>
+
+          </div>
+        </div>
+
+
+
+        <div class="timeline-item reveal-slide-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> December 2025 – January 2026</span>
+            <h3>IBM SkillsBuild – Applied AI Internship</h3>
+            <p class="timeline-org">CSRBOX Foundation &middot; AICTE &middot; IBM SkillsBuild</p>
+            <p class="timeline-project"><i class="fa-solid fa-diagram-project"></i> Project: AI Career Guidance Agent
+            </p>
+            <p>
+              Developed an AI-powered career guidance application using Python (FastAPI),
+              JavaScript, and Gemini AI. The agent analyzes a user's skills against a target
+              job role and generates a personalized learning roadmap.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Gemini AI</span>
+            </div>
+            <a href="AI_Applied.png" target="_blank" rel="noopener" class="btn btn-ghost-sm">
+              <i class="fa-solid fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-slide-left delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> March 2026 – April 2026</span>
+            <h3>IBM SkillsBuild – AI Strategy &amp; Business Intelligence</h3>
+            <p class="timeline-org">CSRBOX Foundation &middot; AICTE &middot; IBM SkillsBuild</p>
+            <p class="timeline-project"><i class="fa-solid fa-diagram-project"></i> Project: Waste Management AI Agent
+            </p>
+            <p>
+              Developed an AI-powered workflow automation system using n8n and Google Sheets
+              that automates garbage pickup requests, complaint handling, and end-to-end
+              workflow tracking.
+            </p>
+            <div class="chip-row">
+              <span class="chip">n8n</span>
+              <span class="chip">Google Sheets</span>
+              <span class="chip">Automation</span>
+            </div>
+            <a href="AI_strategy.png" target="_blank" rel="noopener" class="btn btn-ghost-sm">
+              <i class="fa-solid fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="section-head reveal-fade">
+        <span class="section-eyebrow">04 / Work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal-stagger">
+          <div class="project-image">
+            <img src="Campus2CorporateAI.png" alt="Campus2Corporate AI" loading="lazy">
+            <div class="project-image-overlay"></div>
+          </div>
+
+          <div class="project-body">
+            <h3>Campus2Corporate AI</h3>
+
+            <p>
+              An AI-powered placement preparation platform that helps students analyze resumes,
+              match job descriptions, practice AI-generated interviews, solve aptitude assessments,
+              and track career progress through an interactive dashboard.
+            </p>
+
+            <div class="chip-row">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">Bootstrap</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Python</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">SQLite</span>
+              <span class="chip">Groq AI</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Render</span>
+              <span class="chip">Vercel</span>
+            </div>
+
+            <div class="project-links">
+
+              <a href="https://github.com/parulsharma-git/Campus2Corporate-AI" target="_blank" rel="noopener"
+                class="btn btn-ghost-sm">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+
+              <a href="https://campus2-corporate-ai.vercel.app" target="_blank" rel="noopener"
+                class="btn btn-primary-sm">
+                <i class="fa-solid fa-up-right-from-square"></i> Live Demo
+              </a>
+
+            </div>
+          </div>
+        </article>
+
+
+
+        <article class="project-card reveal-stagger">
+          <div class="project-image">
+            <img src="CarrierProject.png" alt="AI Career Guidance Agent interface" loading="lazy">
+            <div class="project-image-overlay"></div>
+          </div>
+          <div class="project-body">
+            <h3>AI Career Guidance Agent</h3>
+            <p>
+              An AI-powered career guidance application that analyzes a user's skills
+              and recommends missing skills along with a tailored learning roadmap.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Gemini AI</span>
+            </div>
+            <div class="project-links">
+
+              <a href="https://github.com/parulsharma-git/ibm-agent-project" target="_blank" rel="noopener"
+                class="btn btn-ghost-sm">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+
+              <a href="https://ibm-agent-project.vercel.app" target="_blank" rel="noopener" class="btn btn-primary-sm">
+                <i class="fa-solid fa-up-right-from-square"></i> Live Demo
+              </a>
+
+            </div>
+        </article>
+
+        <article class="project-card reveal-stagger">
+          <div class="project-image">
+            <img src="garbage.png" alt="Smart Waste Management System interface" loading="lazy">
+            <div class="project-image-overlay"></div>
+          </div>
+          <div class="project-body">
+            <h3>Smart Waste Management System</h3>
+            <p>
+              Final Year (Semester 6) full-stack project developed using Django. The system enables users to submit
+              garbage complaints, track complaint status, while providing an admin dashboard and a knowledge hub for
+              waste segregation awareness.
+            </p>
+            <div class="chip-row">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Bootstrap</span>
+              <span class="chip">Python</span>
+              <span class="chip">Django</span>
+              <span class="chip">SQLite</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/parulsharma-git/smart-waste-management-system" target="_blank" rel="noopener"
+                class="btn btn-ghost-sm"><i class="fa-brands fa-github"></i>
+                Code</a>
+
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-stagger">
+          <div class="project-image project-image-placeholder">
+            <img src="wasteagent.png" alt="Smart Waste Management System interface" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3>AI-Powered Complaint Automation</h3>
+            <p>
+              An AI workflow automation system built using n8n that connects Google
+              Sheets to automate garbage pickup requests and complaint handling.
+            </p>
+            <div class="chip-row">
+              <span class="chip">n8n</span>
+              <span class="chip">Google Sheets</span>
+              <span class="chip">Workflow Automation</span>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="project-card reveal-stagger">
+          <div class="project-image project-image-placeholder">
+            <i class="fa-solid fa-shirt"></i>
+          </div>
+          <div class="project-body">
+            <h3>ThreadAura</h3>
+            <p>
+              A responsive e-commerce frontend showcasing products with a clean,
+              modern UI across Home, Product Listing, and Product Detail pages.
+            </p>
+            <div class="chip-row">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Bootstrap</span>
+            </div>
+
+
+          </div>
+      </div>
+      </article>
+
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificate" class="section">
+      <div class="section-head reveal-fade">
+        <span class="section-eyebrow">05 / Recognition</span>
+        <h2 class="section-title">Certificates</h2>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card reveal-stagger">
+          <div class="cert-image cert-image-placeholder">
+            <img src="winter_certificate.png" alt="AI Strategy and Business Intelligence certificate" loading="lazy">
+
+          </div>
+          <div class="cert-body">
+            <h3>Fundamentals of AI</h3>
+            <p>Completed a 2-week Winter Certification Program focused on Artificial Intelligence,
+              Prompt Engineering, and AI-assisted web development through IBM SkillsBuild.</p>
+            <a href="winter_certificate.png" target="_blank" rel="noopener" class="btn btn-ghost-sm">
+              <i class="fa-solid fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal-stagger">
+          <div class="cert-image">
+            <img src="Gyanbytes.png" alt="WebMania and TechReels competition certificate" loading="lazy">
+          </div>
+          <div class="cert-body">
+            <h3>WebMania &amp; TechReel</h3>
+            <p> Participated in WebMania by developing an AI Innovation Website and in TechReels
+              by creating a Cyber Security awareness video during GyanBytes 2026.</p>
+            <a href="Gyanbytes.png" target="_blank" rel="noopener" class="btn btn-ghost-sm">
+              <i class="fa-solid fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+
+
+        <div class="cert-card reveal-stagger">
+          <div class="cert-image cert-image-placeholder">
+            <img src="java.png" alt="Java certificate" loading="lazy">
+
+          </div>
+          <div class="cert-body">
+            <h3>1st Position — Java Programming</h3>
+            <p>Awarded First Position in Java Programming for outstanding academic performance
+              and problem-solving skills during the college academic session.</p>
+            <a href="java.png" target="_blank" rel="noopener" class="btn btn-ghost-sm">
+              <i class="fa-solid fa-trophy"></i> View Certificate
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="section-head reveal-fade">
+        <span class="section-eyebrow">06 / Get In Touch</span>
+        <h2 class="section-title">Let's Build Something</h2>
+        <p class="section-sub">Actively seeking internships &amp; entry-level opportunities. Feel free to reach out.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <a href="mailto:parulsharma1535@gmail.com" class="contact-card reveal-stagger">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">parulsharma1535@gmail.com</span>
+        </a>
+
+        <a href="tel:#" class="contact-card reveal-stagger">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+91 8360700894</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/parul-sharma-a2a580347" target="_blank" rel="noopener"
+          class="contact-card reveal-stagger">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/parul-sharma</span>
+        </a>
+
+        <a href="https://github.com/parulsharma-git" target="_blank" rel="noopener" class="contact-card reveal-stagger">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/parulsharma-git</span>
+        </a>
+
+        <a href="Parul_Sharma_Resume.pdf" download class="contact-card reveal-stagger">
+          <div class="contact-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+          <span class="contact-label">Resume</span>
+          <span class="contact-value">Download PDF</span>
+        </a>
+
+        <div class="contact-card contact-card-static reveal-stagger">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <span class="contact-label">Location</span>
+          <span class="contact-value">India</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="#home" class="footer-logo"><span>&lt;</span>Parul<span>/&gt;</span></a>
+
+      <div class="footer-socials">
+        <a href="mailto:parulsharma1535@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/parul-sharma-a2a580347" target="_blank" rel="noopener"
+          aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+      <p class="footer-copy">&copy; <span id="year"></span> Parul Sharma. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
